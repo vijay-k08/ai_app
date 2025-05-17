@@ -89,12 +89,3 @@ numpy
 
 ---
 
-## 🛡️ License
-
-This project is for educational and assessment purposes only.
-
----
-
-## ✉️ Contact
-
-For questions or submissions, contact: \[[your-email@example.com](mailto:your-email@example.com)]
