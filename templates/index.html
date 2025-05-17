@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Tamper Detection</title></head>
+<body>
+  <h2>Upload Document</h2>
+  <form method="POST" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit" value="Analyze">
+  </form>
+
+  {% if metadata_issues %}
+    <h3>Metadata Analysis:</h3>
+    <ul>{% for issue in metadata_issues %}<li>{{ issue }}</li>{% endfor %}</ul>
+  {% endif %}
+
+  {% if template_result %}
+    <h3>Template Matching Result:</h3>
+    <p>{{ template_result }}</p>
+  {% endif %}
+</body>
+</html>
